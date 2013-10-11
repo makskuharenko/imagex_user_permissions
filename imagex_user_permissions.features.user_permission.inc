@@ -523,15 +523,6 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: show format selection for bean.
-  $permissions['show format selection for bean'] = array(
-    'name' => 'show format selection for bean',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
   // Exported permission: show format selection for comment.
   $permissions['show format selection for comment'] = array(
     'name' => 'show format selection for comment',
