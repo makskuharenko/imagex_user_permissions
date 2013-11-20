@@ -109,15 +109,6 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access toolbar.
-  $permissions['access toolbar'] = array(
-    'name' => 'access toolbar',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'toolbar',
-  );
-
   // Exported permission: access user profiles.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
