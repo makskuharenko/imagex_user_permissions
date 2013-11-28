@@ -10,7 +10,7 @@
 function imagex_user_permissions_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access administration pages.
+  // Exported permission: 'access administration pages'.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
@@ -19,7 +19,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access all views.
+  // Exported permission: 'access all views'.
   $permissions['access all views'] = array(
     'name' => 'access all views',
     'roles' => array(
@@ -28,7 +28,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: access backup and migrate.
+  // Exported permission: 'access backup and migrate'.
   $permissions['access backup and migrate'] = array(
     'name' => 'access backup and migrate',
     'roles' => array(
@@ -37,7 +37,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'backup_migrate',
   );
 
-  // Exported permission: access backup files.
+  // Exported permission: 'access backup files'.
   $permissions['access backup files'] = array(
     'name' => 'access backup files',
     'roles' => array(
@@ -46,7 +46,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'backup_migrate',
   );
 
-  // Exported permission: access comments.
+  // Exported permission: 'access comments'.
   $permissions['access comments'] = array(
     'name' => 'access comments',
     'roles' => array(
@@ -55,16 +55,18 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: access content.
+  // Exported permission: 'access content'.
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: access contextual links.
+  // Exported permission: 'access contextual links'.
   $permissions['access contextual links'] = array(
     'name' => 'access contextual links',
     'roles' => array(
@@ -73,7 +75,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'contextual',
   );
 
-  // Exported permission: access dashboard.
+  // Exported permission: 'access dashboard'.
   $permissions['access dashboard'] = array(
     'name' => 'access dashboard',
     'roles' => array(
@@ -82,7 +84,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'dashboard',
   );
 
-  // Exported permission: access rules debug.
+  // Exported permission: 'access rules debug'.
   $permissions['access rules debug'] = array(
     'name' => 'access rules debug',
     'roles' => array(
@@ -91,7 +93,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'rules',
   );
 
-  // Exported permission: access site in maintenance mode.
+  // Exported permission: 'access site in maintenance mode'.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
     'roles' => array(
@@ -100,7 +102,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access site reports.
+  // Exported permission: 'access site reports'.
   $permissions['access site reports'] = array(
     'name' => 'access site reports',
     'roles' => array(
@@ -109,7 +111,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: access user profiles.
+  // Exported permission: 'access user profiles'.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
@@ -118,7 +120,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: add media from remote urls.
+  // Exported permission: 'add media from remote urls'.
   $permissions['add media from remote urls'] = array(
     'name' => 'add media from remote urls',
     'roles' => array(
@@ -127,7 +129,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'remote_stream_wrapper',
   );
 
-  // Exported permission: administer actions.
+  // Exported permission: 'administer actions'.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
     'roles' => array(
@@ -136,7 +138,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer backup and migrate.
+  // Exported permission: 'administer backup and migrate'.
   $permissions['administer backup and migrate'] = array(
     'name' => 'administer backup and migrate',
     'roles' => array(
@@ -145,7 +147,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'backup_migrate',
   );
 
-  // Exported permission: administer blocks.
+  // Exported permission: 'administer blocks'.
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
     'roles' => array(
@@ -154,7 +156,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'block',
   );
 
-  // Exported permission: administer comments.
+  // Exported permission: 'administer comments'.
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
     'roles' => array(
@@ -163,7 +165,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: administer features.
+  // Exported permission: 'administer features'.
   $permissions['administer features'] = array(
     'name' => 'administer features',
     'roles' => array(
@@ -172,7 +174,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: administer field collections.
+  // Exported permission: 'administer field collections'.
   $permissions['administer field collections'] = array(
     'name' => 'administer field collections',
     'roles' => array(
@@ -181,7 +183,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'field_collection',
   );
 
-  // Exported permission: administer menu.
+  // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
@@ -190,7 +192,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'menu',
   );
 
-  // Exported permission: administer meta tags.
+  // Exported permission: 'administer meta tags'.
   $permissions['administer meta tags'] = array(
     'name' => 'administer meta tags',
     'roles' => array(
@@ -199,7 +201,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'metatag',
   );
 
-  // Exported permission: administer module filter.
+  // Exported permission: 'administer module filter'.
   $permissions['administer module filter'] = array(
     'name' => 'administer module filter',
     'roles' => array(
@@ -208,7 +210,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'module_filter',
   );
 
-  // Exported permission: administer modules.
+  // Exported permission: 'administer modules'.
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
     'roles' => array(
@@ -217,7 +219,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer pathauto.
+  // Exported permission: 'administer pathauto'.
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
     'roles' => array(
@@ -226,7 +228,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'pathauto',
   );
 
-  // Exported permission: administer permissions.
+  // Exported permission: 'administer permissions'.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
     'roles' => array(
@@ -235,7 +237,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer redirects.
+  // Exported permission: 'administer redirects'.
   $permissions['administer redirects'] = array(
     'name' => 'administer redirects',
     'roles' => array(
@@ -244,7 +246,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'redirect',
   );
 
-  // Exported permission: administer rules.
+  // Exported permission: 'administer rules'.
   $permissions['administer rules'] = array(
     'name' => 'administer rules',
     'roles' => array(
@@ -253,7 +255,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'rules',
   );
 
-  // Exported permission: administer search.
+  // Exported permission: 'administer search'.
   $permissions['administer search'] = array(
     'name' => 'administer search',
     'roles' => array(
@@ -262,7 +264,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: administer shortcuts.
+  // Exported permission: 'administer shortcuts'.
   $permissions['administer shortcuts'] = array(
     'name' => 'administer shortcuts',
     'roles' => array(
@@ -271,7 +273,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'shortcut',
   );
 
-  // Exported permission: administer site configuration.
+  // Exported permission: 'administer site configuration'.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
@@ -280,7 +282,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer software updates.
+  // Exported permission: 'administer software updates'.
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
     'roles' => array(
@@ -289,7 +291,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer taxonomy.
+  // Exported permission: 'administer taxonomy'.
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
@@ -298,7 +300,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: administer themes.
+  // Exported permission: 'administer themes'.
   $permissions['administer themes'] = array(
     'name' => 'administer themes',
     'roles' => array(
@@ -307,7 +309,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: administer url aliases.
+  // Exported permission: 'administer url aliases'.
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
     'roles' => array(
@@ -316,7 +318,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: administer users.
+  // Exported permission: 'administer users'.
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
@@ -325,7 +327,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer uuid.
+  // Exported permission: 'administer uuid'.
   $permissions['administer uuid'] = array(
     'name' => 'administer uuid',
     'roles' => array(
@@ -334,7 +336,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'uuid',
   );
 
-  // Exported permission: administer views.
+  // Exported permission: 'administer views'.
   $permissions['administer views'] = array(
     'name' => 'administer views',
     'roles' => array(
@@ -343,7 +345,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: block IP addresses.
+  // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
     'roles' => array(
@@ -352,7 +354,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: bypass node access.
+  // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
@@ -361,7 +363,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: bypass rules access.
+  // Exported permission: 'bypass rules access'.
   $permissions['bypass rules access'] = array(
     'name' => 'bypass rules access',
     'roles' => array(
@@ -370,7 +372,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'rules',
   );
 
-  // Exported permission: cancel account.
+  // Exported permission: 'cancel account'.
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(
@@ -379,7 +381,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: change own username.
+  // Exported permission: 'change own username'.
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
@@ -388,7 +390,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: create url aliases.
+  // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(
@@ -397,7 +399,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: customize shortcut links.
+  // Exported permission: 'customize shortcut links'.
   $permissions['customize shortcut links'] = array(
     'name' => 'customize shortcut links',
     'roles' => array(
@@ -406,7 +408,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'shortcut',
   );
 
-  // Exported permission: delete backup files.
+  // Exported permission: 'delete backup files'.
   $permissions['delete backup files'] = array(
     'name' => 'delete backup files',
     'roles' => array(
@@ -415,7 +417,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'backup_migrate',
   );
 
-  // Exported permission: delete revisions.
+  // Exported permission: 'delete revisions'.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
@@ -424,7 +426,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit meta tags.
+  // Exported permission: 'edit meta tags'.
   $permissions['edit meta tags'] = array(
     'name' => 'edit meta tags',
     'roles' => array(
@@ -433,7 +435,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'metatag',
   );
 
-  // Exported permission: edit own comments.
+  // Exported permission: 'edit own comments'.
   $permissions['edit own comments'] = array(
     'name' => 'edit own comments',
     'roles' => array(
@@ -442,7 +444,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: manage features.
+  // Exported permission: 'manage features'.
   $permissions['manage features'] = array(
     'name' => 'manage features',
     'roles' => array(
@@ -451,7 +453,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: notify of path changes.
+  // Exported permission: 'notify of path changes'.
   $permissions['notify of path changes'] = array(
     'name' => 'notify of path changes',
     'roles' => array(
@@ -460,7 +462,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'pathauto',
   );
 
-  // Exported permission: perform backup.
+  // Exported permission: 'perform backup'.
   $permissions['perform backup'] = array(
     'name' => 'perform backup',
     'roles' => array(
@@ -469,7 +471,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'backup_migrate',
   );
 
-  // Exported permission: post comments.
+  // Exported permission: 'post comments'.
   $permissions['post comments'] = array(
     'name' => 'post comments',
     'roles' => array(
@@ -478,7 +480,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: restore from backup.
+  // Exported permission: 'restore from backup'.
   $permissions['restore from backup'] = array(
     'name' => 'restore from backup',
     'roles' => array(
@@ -487,7 +489,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'backup_migrate',
   );
 
-  // Exported permission: revert revisions.
+  // Exported permission: 'revert revisions'.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
@@ -496,7 +498,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: search content.
+  // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',
     'roles' => array(
@@ -505,7 +507,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: select account cancellation method.
+  // Exported permission: 'select account cancellation method'.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
     'roles' => array(
@@ -514,7 +516,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: show format selection for comment.
+  // Exported permission: 'show format selection for comment'.
   $permissions['show format selection for comment'] = array(
     'name' => 'show format selection for comment',
     'roles' => array(
@@ -523,7 +525,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: show format selection for field_collection_item.
+  // Exported permission: 'show format selection for field_collection_item'.
   $permissions['show format selection for field_collection_item'] = array(
     'name' => 'show format selection for field_collection_item',
     'roles' => array(
@@ -532,7 +534,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: show format selection for file.
+  // Exported permission: 'show format selection for file'.
   $permissions['show format selection for file'] = array(
     'name' => 'show format selection for file',
     'roles' => array(
@@ -541,7 +543,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: show format selection for node.
+  // Exported permission: 'show format selection for node'.
   $permissions['show format selection for node'] = array(
     'name' => 'show format selection for node',
     'roles' => array(
@@ -550,7 +552,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: show format selection for rules_config.
+  // Exported permission: 'show format selection for rules_config'.
   $permissions['show format selection for rules_config'] = array(
     'name' => 'show format selection for rules_config',
     'roles' => array(
@@ -559,7 +561,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: show format selection for taxonomy_term.
+  // Exported permission: 'show format selection for taxonomy_term'.
   $permissions['show format selection for taxonomy_term'] = array(
     'name' => 'show format selection for taxonomy_term',
     'roles' => array(
@@ -568,7 +570,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: show format selection for user.
+  // Exported permission: 'show format selection for user'.
   $permissions['show format selection for user'] = array(
     'name' => 'show format selection for user',
     'roles' => array(
@@ -577,7 +579,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: show format tips.
+  // Exported permission: 'show format tips'.
   $permissions['show format tips'] = array(
     'name' => 'show format tips',
     'roles' => array(
@@ -586,7 +588,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: show more format tips link.
+  // Exported permission: 'show more format tips link'.
   $permissions['show more format tips link'] = array(
     'name' => 'show more format tips link',
     'roles' => array(
@@ -595,7 +597,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: skip comment approval.
+  // Exported permission: 'skip comment approval'.
   $permissions['skip comment approval'] = array(
     'name' => 'skip comment approval',
     'roles' => array(
@@ -604,7 +606,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: switch shortcut sets.
+  // Exported permission: 'switch shortcut sets'.
   $permissions['switch shortcut sets'] = array(
     'name' => 'switch shortcut sets',
     'roles' => array(
@@ -613,7 +615,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'shortcut',
   );
 
-  // Exported permission: use advanced search.
+  // Exported permission: 'use advanced search'.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
     'roles' => array(
@@ -622,7 +624,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: view own unpublished content.
+  // Exported permission: 'view own unpublished content'.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
@@ -631,7 +633,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: view revisions.
+  // Exported permission: 'view revisions'.
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
@@ -640,7 +642,7 @@ function imagex_user_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: view the administration theme.
+  // Exported permission: 'view the administration theme'.
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
