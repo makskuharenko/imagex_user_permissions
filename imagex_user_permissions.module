@@ -3,3 +3,69 @@
  * @file
  * Drupal needs this blank file.
  */
+
+/**
+ * Implements hook_features_export_render_alter().
+ */
+function imagex_user_permissions_features_export_render_alter(&$code, $context) {
+  // Grab user permissions and wrap in module_exists wrapper
+  if ($context['component'] == 'user_permission' && $context['module_name'] == 'imagex_user_permissions' && !empty($context['export']['features']['user_permission'])) {
+    $data = $context['export']['features']['user_permission'];
+    $perm_modules = &drupal_static(__FUNCTION__ . '_perm_modules');
+     if (!isset($perm_modules)) {
+       $perm_modules = user_permission_get_modules();
+     }
+    
+     $newcode = array();
+     $newcode[] = '  $permissions = array();';
+     $newcode[] = '';
+    
+     $permissions = _user_features_get_permissions();
+     
+     $data_by_module = array();
+     if (isset($perm_modules)) {
+       foreach ($perm_modules as $perm => $module) {
+         if (in_array($perm, $data)) {
+           $data_by_module[$module][$perm] = $perm;
+         }
+       }
+     }
+    
+     $modules = array();
+     foreach ($data_by_module as $module => $permission) {
+       $newcode[] = "  // Exported permissions from: $module module";
+       $newcode[] = "  if (module_exists('" . $module . "')) {";    
+       
+       foreach ($permission as $perm_name) {
+         $permission = array();
+         // Export vocabulary permissions using the machine name, instead of
+         // vocabulary id.
+         $perm = $perm_name;
+         _user_features_change_term_permission($perm_name, 'machine_name');
+         $permission['name'] = $perm;
+         if (!empty($permissions[$perm_name])) {
+           sort($permissions[$perm_name]);
+           $permission['roles'] = drupal_map_assoc($permissions[$perm_name]);
+         }
+         else {
+           $permission['roles'] = array();
+         }
+         if (isset($perm_modules[$perm_name])) {
+           $permission['module'] = $module;
+         }
+         
+         $perm_identifier = features_var_export($perm);
+         $perm_export = features_var_export($permission, '    ');
+         $newcode[] = "    // Exported permission: {$perm_identifier}.";
+         $newcode[] = "    \$permissions[{$perm_identifier}] = {$perm_export};";
+       }
+       
+       $newcode[] = "  }";
+       $newcode[] = "";
+     }
+    
+     $newcode[] = '  return $permissions;';
+     $newcode = implode("\n", $newcode);
+     $code['user_default_permissions'] = $newcode;
+  }
+}
