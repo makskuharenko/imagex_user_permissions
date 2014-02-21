@@ -414,6 +414,10 @@ function imagex_user_permissions_user_default_permissions() {
     $permissions['view the administration theme'] = array(
       'name' => 'view the administration theme',
       'roles' => array(
+        'Content Administrator' => 'Content Administrator',
+        'Content Creator' => 'Content Creator',
+        'Content Manager' => 'Content Manager',
+        'Content Moderator' => 'Content Moderator',
         'administrator' => 'administrator',
       ),
       'module' => 'system',
