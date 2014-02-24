@@ -80,6 +80,10 @@ function imagex_user_permissions_user_default_permissions() {
     $permissions['administer comments'] = array(
       'name' => 'administer comments',
       'roles' => array(
+        'Content Administrator' => 'Content Administrator',
+        'Content Creator' => 'Content Creator',
+        'Content Manager' => 'Content Manager',
+        'Content Moderator' => 'Content Moderator',
         'administrator' => 'administrator',
       ),
       'module' => 'comment',
