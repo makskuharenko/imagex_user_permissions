@@ -315,6 +315,8 @@ function imagex_user_permissions_user_default_permissions() {
       'name' => 'search content',
       'roles' => array(
         'administrator' => 'administrator',
+        'anonymous user' => 'anonymous user',
+        'authenticated user' => 'authenticated user',
       ),
       'module' => 'search',
     );
@@ -323,6 +325,8 @@ function imagex_user_permissions_user_default_permissions() {
       'name' => 'use advanced search',
       'roles' => array(
         'administrator' => 'administrator',
+        'anonymous user' => 'anonymous user',
+        'authenticated user' => 'authenticated user',
       ),
       'module' => 'search',
     );
@@ -402,6 +406,7 @@ function imagex_user_permissions_user_default_permissions() {
     $permissions['access administration pages'] = array(
       'name' => 'access administration pages',
       'roles' => array(
+        'Content Administrator' => 'Content Administrator',
         'administrator' => 'administrator',
       ),
       'module' => 'system',
